@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @gategory.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @gategory.description %>
+</p>
+
+<%= link_to 'Edit', edit_gategory_path(@gategory) %> |
+<%= link_to 'Back', gategories_path %>

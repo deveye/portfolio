@@ -1,0 +1,2 @@
+class Gategory < ApplicationRecord
+end
