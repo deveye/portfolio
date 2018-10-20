@@ -3,6 +3,10 @@ class PortfoliosController < ApplicationController
 		@portfolio_items = Portfolio.all
 	end
 
+	def php
+		@php_portfolio_items = Portfolio.php
+	end
+
 	def new
 		@portfolio_item = Portfolio.new
 	end
