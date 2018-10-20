@@ -11,6 +11,19 @@ class PortfoliosController < ApplicationController
 		@portfolio_item = Portfolio.find(params[:id])
 	end
 
+	def destroy
+		# Perform the lookup
+	 	@portfolio_item = Portfolio.find(params[:id])
+
+	 	# Destroy the record
+	 	@portfolio_item.destroy
+
+	 	# Redirect
+  	respond_to do |format|
+      format.html { redirect_to portfolio_url, notice: 'Portfolio was successfully removed.' }
+    end
+	end
+
 	def create
 		@portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
 
