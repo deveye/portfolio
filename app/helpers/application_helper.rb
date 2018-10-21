@@ -16,4 +16,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+
+  def set_copyright
+    EekkViewTool::Renderer.copyright 'Kristo Eek', 'All rights reserved'
+  end
 end
