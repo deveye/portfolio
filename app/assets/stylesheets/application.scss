@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
+
 #mainNav {
   min-height: 56px;
   background-color: #fff;
@@ -47,6 +48,7 @@
     background-color: transparent;
     -webkit-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
+    background-color: #090c0c;
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
@@ -152,20 +154,20 @@
 }
 
 .btn-primary {
-  background-color: #64a19d;
+  background-color: #017a92;
 }
 
 .btn-primary:hover {
-  background-color: #4f837f;
+  background-color: #a33a20;
 }
 
 .btn-primary:focus {
-  background-color: #4f837f;
+  background-color: #a33a20;
   color: white;
 }
 
 .btn-primary:active {
-  background-color: #467370 !important;
+  background-color: #a33a20 !important;
 }
 
 .about-section {
@@ -303,4 +305,8 @@ a:focus, a:hover {
 
 footer {
   padding: 5rem 0;
+}
+
+.text-blue-50 {
+  color: #64a19d !important;
 }
